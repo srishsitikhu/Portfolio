@@ -277,8 +277,8 @@ document.addEventListener('DOMContentLoaded', function () {
     // Method 1: Download actual PDF file
     function downloadPDFFile() {
         const link = document.createElement("a");
-        link.href = "./assets/Alish_Pawn_CV.pdf"; // Path to your PDF file
-        link.download = "Alish_Pawn_CV.pdf";
+        link.href = "./assets/SrishCV.pdf"; // Path to your PDF file
+        link.download = "SrishCV.pdf";
         link.target = "_blank";
         document.body.appendChild(link);
         link.click();
@@ -287,7 +287,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Method 2: Alternative - Open PDF in new tab
     function openPDFInNewTab() {
-        window.open("./assets/Alish_Pawn_CV.pdf", "_blank");
+        window.open("./assets/SrishCV.pdf", "_blank");
     }
 
     // Method 3: Embed PDF in modal for preview
@@ -298,9 +298,9 @@ document.addEventListener('DOMContentLoaded', function () {
         // Clear existing content
         modalBody.innerHTML = `
       <div class="pdf-container">
-        <embed src="./assets/Alish_Pawn_CV.pdf" type="application/pdf" width="100%" height="500px">
+        <embed src="./assets/SrishCV.pdf" type="application/pdf" width="100%" height="500px">
         <p style="text-align: center; margin-top: 1rem; color: var(--text-secondary);">
-          If the PDF doesn't display, <a href="./assets/Alish_Pawn_CV.pdf" target="_blank" style="color: var(--primary-color);">click here to open it in a new tab</a>.
+          If the PDF doesn't display, <a href="./assets/SrishCV.pdf" target="_blank" style="color: var(--primary-color);">click here to open it in a new tab</a>.
         </p>
       </div>
     `;
